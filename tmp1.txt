@@ -1,0 +1,17 @@
+
+--> Using cache
+ ---> 7fe52d462e18
+Step 6/10 : COPY package.json yarn.lock /usr/src/app/
+ERROR: Service 'app' failed to build : COPY failed: stat /var/lib/docker/tmp/docker-builder594830143/yarn.lock: no such file or directory
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+classic.yarnpkg.comclassic.yarnpkg.com
+Yarn
+Fast, reliable, and secure dependency management.
+
+
+
+--- start your app, postgres and redis for the app1 node instance, communicating with node1 in the quorum network --------
+/home/ubuntu/intraday-repo/server
+sudo NUMBER=1 COMPOSE_PROJECT_NAME=app1 yarn dc:refresh
+
